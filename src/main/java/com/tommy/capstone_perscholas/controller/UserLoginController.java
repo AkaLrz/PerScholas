@@ -6,15 +6,11 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 @Slf4j
@@ -63,7 +59,7 @@ public class UserLoginController {
     @GetMapping("/login")
     public String getLoginPage(){
         log.info("Login page displayed");
-        return "login";
+        return "new";
     }
 
     @RequestMapping("/home")
