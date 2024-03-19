@@ -11,4 +11,5 @@ public interface UserLoginService extends UserDetailsService {
     public void creat(UserDTO userDTO);
     public User findUserByEmail(String email);
     public User findUserByName(String name);
+    boolean existsByUsername(String userName);
 }

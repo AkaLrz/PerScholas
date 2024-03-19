@@ -74,4 +74,10 @@ public class UserLoginServiceImpl implements UserLoginService {
         return userDao.findByUserName(name);
     }
 
+    @Override
+    public boolean existsByUsername(String userName) {
+        return userDao.existsByUserName(userName);
+    }
+
+
 }
