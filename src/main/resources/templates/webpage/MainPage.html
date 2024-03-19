@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>R&L Photography</title>
+        <link href="../../static/css/MainPage.css" rel="stylesheet" type="text/css" th:href="@{~/css/MainPage.css}"/>
+        <script th:src="@{~/js/top.loaction.js}"></script>
+    </head>
+    <body>
+        <div class = "Head">
+            <h1>R&L Photography</h1>
+            <h2>Wedding and portrait</h2>
+        </div>
+        <div class = "container">
+            <ul class = "navigator">
+                <li><a class ="active" href="MainPage"> Home</a> </li>
+                <li><a href="Portfolio" onclick="getPortfolio()">Portfolio</a></li>
+                <li><a href="Service" onclick="getService()">Service</a></li>
+                <li><a href="mailto:a397704290@outlook.com">Contact</a></li>
+<!--                <li><a href="About" onclick="getAbout()">About</a></li>-->
+                <li style="float:right">
+                    <a href="https://www.instagram.com/aka_lrz/">
+<!--                        th:src="@{~/images/instagram.png}-->
+                        <img src="./images/instagram.png" alt="Instagram Icon" class="instagram" width="10" height="10">
+                        Instagram
+                    </a>
+                </li>
+                <li style="float:right">
+                    <a href="login" onclick="getUserLogin()">
+                        <img src = "./images/login.png" alt="Login Icon" class="login-user" width="10" height="10"> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Liyinzhang & Qing Li
+                    <br> 08/08/2023
+                </h1>
+            </div>
+        </div>
+        <div class="container2">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/DSC00663.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/DSC00693.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/DSC00517.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/DSC01425.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/DSC01575.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/DSC01629.jpg" style="width:100%">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC00663.jpg" style="width:100%" onclick="currentSlide(1)" alt="New 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC00693.jpg" style="width:100%" onclick="currentSlide(2)" alt="New 2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC00517.jpg" style="width:100%" onclick="currentSlide(3)" alt="New 3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC01425.jpg" style="width:100%" onclick="currentSlide(4)" alt="New 4">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC01575.jpg" style="width:100%" onclick="currentSlide(5)" alt="New 5">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/DSC01629.jpg" style="width:100%" onclick="currentSlide(6)" alt="New 6">
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

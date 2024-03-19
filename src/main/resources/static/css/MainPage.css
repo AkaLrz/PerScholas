@@ -1,0 +1,186 @@
+.Head{
+    text-align: center;
+    margin-top: 30px;
+}
+.Head h1{
+    font-family: "Arial Hebrew";
+    font-size: 40px;
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 1px;
+    letter-spacing: 10px;
+}
+.Head h2{
+    font-family: "Arial Hebrew", sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.navigator{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.navigator li{
+    float: left;
+    border-right: 1px solid white;
+}
+.navigator li:last-child{
+    margin-right: auto;
+}
+.navigator li:nth-last-child(2){
+    margin-right: auto;
+}
+.navigator li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+.instagram,.login-user{
+    vertical-align: center;
+}
+body, html {
+    height: 100%;
+}
+.hero-image {
+    background-image: url("/images/hero_image.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    font-size: 7px;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.column {
+    float: left;
+    width: 80%;
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.left-words {
+    flex: 1;
+    font-size: 1.5em;
+    font-family: "Arial Hebrew";
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+

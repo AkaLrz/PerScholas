@@ -30,42 +30,66 @@ public class UserLoginController {
 
     @GetMapping("/")
     private String redirectToLogin(){
-        return "redirect:/login";
+        return "webpage/MainPage";
     }
 
     @GetMapping("/sign-up")
     public String signUp(Model model){
         model.addAttribute("userDto", new UserDTO());
-        return "sign-up";
+        return "user/sign-up";
     }
 
     @PostMapping("/signup-process")
     public String signupProcess(@Valid @ModelAttribute("userDto") UserDTO userDto, BindingResult bindingResult, Model model){
         if(bindingResult.hasErrors()){
             log.warn("Wrong attempt");
-            return "sign-up";
+            return "user/sign-up";
         }
         if(userDetailsService.existsByUsername(userDto.getUserName())) {
             bindingResult.rejectValue("userName", "error.user", "Username is already taken");
             model.addAttribute("error", "Username is already taken");
             log.warn("Wrong attempt");
-            return "sign-up";
+            return "user/sign-up";
         }
 
         userDetailsService.creat(userDto);
-        return "confirmation";
+        return "user/confirmation";
     }
 
     @GetMapping("/login")
     public String getLoginPage(){
         log.info("Login page displayed");
-        return "new";
+        return "user/new";
     }
 
-    @RequestMapping("/home")
+    @RequestMapping("/userHome")
     public String getHome(){
         log.info("Home page displayed");
-        return "home";
+        return "user/userHome";
+    }
+
+    @RequestMapping("/Portfolio")
+    public String getPortfolio(){
+        log.info("Portfolio page displayed");
+        return "webpage/Portfolio";
+    }
+
+    @RequestMapping("/Service")
+    public String getService(){
+        log.info("Service page displayed");
+        return "webpage/Service";
+    }
+
+    @RequestMapping("/AboutMe")
+    public String getAboutMe(){
+        log.info("About me page displayed");
+        return "webpage/AboutMe";
+    }
+
+    @RequestMapping("/MainPage")
+    public String getMainPage(){
+        log.info("Main page displayed");
+        return "webpage/MainPage";
     }
 
 }
