@@ -14,10 +14,4 @@ class CapStonePerScholasApplicationTests {
     @Test
     void contextLoads() {
     }
-
-    @Test
-    void testUserLogin(UserDetails userDetails) {
-//        assertTrueValidate(userLoginService.findUserByName(userDetails.getUsername());
-    }
-
 }
