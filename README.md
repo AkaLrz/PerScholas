@@ -18,3 +18,9 @@ Spring Security
 Thymeleaf
 MySQL
 JPA
+
+User Story:
+1.Main Page: As a User I want to see a good Hero-image when I go to the website, I want the hero-image attractive me in the first Time
+2.Navigate Bar: As a User I want the Navigate bar help me jump into another page to check other page
+3.Profolio: As a User I want to see what's your profolio and where you take the photo thus I can know in what situation your job
+4.Instagram: I can jump to your Instagram
